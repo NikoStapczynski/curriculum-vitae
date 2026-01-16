@@ -38,15 +38,15 @@ Roslindale, MA
 - Developed Tor service support for emailselfdefense.fsf.org and tested locally using virtual machines
 - Applied Ansible to automate mass deployment and documented process on internal wiki
 
-### Software Engineering Co-op (January to June 2012)
-**EnerNOC — Boston, MA**
-- Developed bash script with ncurses interface to migrate energy data to new servers
-- Worked closely with engineers to deliver high-quality energy information software
-
 ### Bicycle Messenger (November 2013 to April 2017)
 **Fly Over The City / Breakaway Courier Systems — Boston, MA**
 - Trusted to deliver time sensitive confidential and/or financial documents and packages for a diverse set of clientele (Lawyers, Architects, Printers, and Labs)
 - Coordinated with dispatch via PTT radio to meet tight deadlines
+
+### Software Engineering Co-op (January to June 2012)
+**EnerNOC — Boston, MA**
+- Developed bash script with ncurses interface to migrate energy data to new servers
+- Worked closely with engineers to deliver high-quality energy information software
 
 ### Research Programmer Co-op (January to June 2011)
 **Northeastern University CCIS — Boston, MA**
