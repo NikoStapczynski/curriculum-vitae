@@ -10,7 +10,7 @@ Roslindale, MA
 
 **Languages:** Python, JavaScript, TypeScript, Go, Bash, SQL, Java  
 **Systems:** Debian Linux, MacOS, Windows  
-**Tools:** GitHub, Cline, Opencode, Azure, Elastic, Bot Framework Composer, Postman, Apps Script  
+**Tools:** GitHub, Codium, Cline, Opencode, Azure, Elastic, Bot Framework Composer, Postman, Apps Script  
 **Practices:** Agile/LeSS, CI/CD, Automated Testing, CAB meetings, Code Reviews
 
 ## Professional Experience
