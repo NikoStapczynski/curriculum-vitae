@@ -1,54 +1,95 @@
-# Nicholas Constantine Stapczynski
+# Curriculum Vitae Generator
 
-Roslindale, MA
+A structured repository for managing and tailoring resumes for different job applications. This system allows you to maintain modular resume components and generate customized versions for specific job postings.
 
-## Education
+## Repository Structure
 
-**Northeastern University**, Boston, MA — Bachelor of Science in Computer Science and Criminal Justice (2020)
+```
+curriculum-vitae/
+├── templates/
+│   ├── base_resume.md          # Complete resume template
+│   └── styles/
+│       └── resume.css          # Custom styling for HTML output
+├── jobs/
+│   └── software-engineer-example/
+│       ├── customizations.md   # Job-specific tailoring notes
+│       └── job_description.txt # Original job posting for reference
+├── output/
+│   └── software-engineer-example/
+│       ├── resume.md           # Generated markdown resume
+│       ├── resume.html         # Generated HTML resume
+│       └── resume.pdf          # Generated PDF resume
+├── scripts/
+│   ├── generate_html.sh        # Convert markdown to HTML
+│   └── generate_pdf.sh         # Convert markdown to PDF
+├── config/
+│   └── job_configs.yaml        # Configuration for different jobs
+└── README.md                   # This file
+```
 
-## Technical Skills
+## Quick Start
 
-**Languages:** Python, JavaScript, TypeScript, Go, Bash, SQL, Java  
-**Systems:** Debian Linux, MacOS, Windows  
-**Tools:** GitHub, Codium, Cline, Opencode, Azure, Elastic, Bot Framework Composer, Postman, Apps Script  
-**Practices:** Agile/LeSS, CI/CD, Automated Testing, CAB meetings, Code Reviews
+1. **Install Dependencies**
+   ```bash
+   # Install pandoc for HTML/PDF generation
+   sudo apt install pandoc  # Debian
+   ```
 
-## Professional Experience
+2. **Create a New Job Application**
+   ```bash
+   # Create job directory
+   mkdir -p jobs/new-job-name
 
-### Site Reliability Engineer (2024 to August 2025)
-**Optum, Inc., United Healthcare Group — Boston, MA**
-- Wrote Azure and Elastic KQL alerts to monitor infrastructure health and created dashboards for troubleshooting
-- Participated in on-call rotation, assisting developers with ServiceNow tickets and communicating status during war rooms
+   # Add job description and customizations
+   cp jobs/software-engineer-example/job_description.txt jobs/new-job-name/
+   cp jobs/software-engineer-example/customizations.md jobs/new-job-name/
+   ```
 
-### Software Engineer (2022 to 2024)
-**Optum, Inc., United Healthcare Group — Boston, MA**
-- Developed healthcare chatbots using Bot Framework Composer, Python, and JavaScript
-- Translated business requirements into technical solutions and participated in Agile LeSS ceremonies
-- Performed on-call troubleshooting for service outages and conducted code reviews with team members
-- Deployed new bots and software updates during scheduled maintenance windows
+3. **Generate Resume**
+   ```bash
+   # Generate HTML
+   ./scripts/generate_html.sh new-job-name
 
-### Data Visualization Engineer Consultant (2018 to 2021)
-**Human Resources Services, Inc. — Andover, MA**
-- Sanitized and converted Excel data using Python and Bash scripting for municipal government clients
-- Generated compensation and pay equity charts with Plotly, Tableau, and LibreOffice
-- Built and documented automation scripts to expedite data analysis projects
+   # Generate PDF
+   ./scripts/generate_pdf.sh new-job-name
+   ```
 
-### Tech Team Intern (June 2019)
-**Free Software Foundation — Boston, MA**
-- Developed Tor service support for emailselfdefense.fsf.org and tested locally using virtual machines
-- Applied Ansible to automate mass deployment and documented process on internal wiki
+## Workflow for Job Applications
 
-### Bicycle Messenger (November 2013 to April 2017)
-**Fly Over The City / Breakaway Courier Systems — Boston, MA**
-- Trusted to deliver time sensitive confidential and/or financial documents and packages for a diverse set of clientele (Lawyers, Architects, Printers, and Labs)
-- Coordinated with dispatch via PTT radio to meet tight deadlines
+1. **Save Job Posting**: Copy the job description to `jobs/[job-name]/job_description.txt`
 
-### Software Engineering Co-op (January to June 2012)
-**EnerNOC — Boston, MA**
-- Developed bash script with ncurses interface to migrate energy data to new servers
-- Worked closely with engineers to deliver high-quality energy information software
+2. **Plan Customizations**: Note what to emphasize/de-emphasize in `jobs/[job-name]/customizations.md`
 
-### Research Programmer Co-op (January to June 2011)
-**Northeastern University CCIS — Boston, MA**
-- Contributed to NSF-funded project implementing test-first curriculum for undergraduate CS program
-- Developed programs using Java, Racket, JavaScript, SQL, and LaTeX to test and improve code quality
+3. **Edit Resume**: Modify `templates/base_resume.md` for this job
+
+4. **Generate Outputs**: Run the generation scripts to create tailored resume files
+
+5. **Apply**: Use the generated files in `output/[job-name]/` for your application
+
+## Customization Tips
+
+- **Summary**: Tailor the objective statement to match job requirements
+- **Skills**: Reorder and prioritize skills mentioned in the job posting
+- **Experience**: Lead with roles most relevant to the target position
+- **Projects**: Highlight projects that demonstrate required skills
+- **Keywords**: Incorporate keywords from the job description naturally
+
+## Scripts
+
+- `generate_html.sh`: Converts markdown to styled HTML (requires pandoc)
+- `generate_pdf.sh`: Converts markdown to PDF (requires pandoc)
+
+## Dependencies
+
+- Bash
+- pandoc (for HTML/PDF generation)
+
+## Contributing
+
+When updating your base resume:
+1. Edit `templates/base_resume.md` directly
+2. Update any job-specific customizations as needed
+
+## License
+
+This repository contains personal resume information. Please respect privacy and do not distribute without permission.

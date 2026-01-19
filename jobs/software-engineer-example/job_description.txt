@@ -1,0 +1,26 @@
+Software Engineer I - Backend Development
+
+Company: TechCorp Healthcare Solutions
+Location: Boston, MA
+
+Job Description:
+We are seeking a motivated Software Engineer I to join our backend development team. The ideal candidate will have experience with Python, JavaScript, and modern web frameworks, with a focus on building scalable healthcare applications.
+
+Key Responsibilities:
+- Develop and maintain backend services using Python and Node.js
+- Build and maintain RESTful APIs
+- Integrate with healthcare databases and ensure data security
+- Participate in Agile development processes
+- Collaborate with cross-functional teams
+
+Required Skills:
+- Python, JavaScript
+- REST API development
+- Database integration (SQL preferred)
+- Healthcare domain knowledge a plus
+- Experience with cloud platforms (Azure, AWS)
+
+Preferred Qualifications:
+- Docker, Kubernetes experience
+- CI/CD pipeline experience
+- Healthcare industry experience
